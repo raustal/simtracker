@@ -9,6 +9,7 @@ and all sim related things.
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Donate](#donate)
 
 ## Installation
 
@@ -17,3 +18,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Donate
+Bitcoin: [bc1q3whpjztrpw6hj8hhs8xen59r38g3ncs22emyce](bitcoin:bc1q3whpjztrpw6hj8hhs8xen59r38g3ncs22emyce?message=GitHub%20-%20SimTracker%20Project%20Donation)
