@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>SimTracker</title>
-    {% endif %}
+    {% block title %}
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>SimTracker</title>
+        {% endif %}
+    {% endblock %}
     <style>
         /* Add your CSS styles here */
     </style>

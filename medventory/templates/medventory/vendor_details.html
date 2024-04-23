@@ -1,0 +1,14 @@
+{% extends 'medventory/base.html' %}
+
+
+{% block content %}
+    <h2>Vendor Details</h2>
+    <p>Vendor: {{ vendor.name }}</p>
+    <p>Address: {{ vendor.address }}</p>
+    <p>City: {{ vendor.city }}</p>
+    <p>State: {{ vendor.state }}</p>
+    <p>Phone: {{ vendor.phone }}</p>
+    <p>Fax: {{ vendor.fax }}</p>
+    <p>Email: {{ vendor.email }}</p>
+    <p>Website: {{ vendor.website }}</p>
+{% endblock content %}    
