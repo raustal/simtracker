@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Vendor List</h1>
+    {% if vendor %}
+        <h2>Our Simulation Medication Suppliers:</h2>
+        {% for vendor in vendors %}
+            <p>Total: {{ vendors|length }}</p>
+            <ul>
+                <li><h3>{{ vendor.name }}</li</h3></li>
+            </ul>
+        {% endfor %}
+    {% else %}
+        <p>No vendor data found in the database at this time.</p>
+    {% endif %}
+{% endblock content %}
