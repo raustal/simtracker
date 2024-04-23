@@ -9,7 +9,7 @@ class Vendor(models.Model):
     zip = models.CharField(max_length=64)
     phone = models.CharField(max_length=64)
     fax = models.CharField(max_length=64)
-    email = models.CharField(max_length=64)
+    email = models.EmailField(max_length=64)
     website = models.CharField(max_length=64)
 
     def __str__(self) -> str:

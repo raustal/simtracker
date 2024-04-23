@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Responsive Website</title>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>SimTracker</title>
+    {% endif %}
     <style>
         /* Add your CSS styles here */
     </style>
