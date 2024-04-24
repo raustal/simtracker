@@ -19,7 +19,6 @@ class Vendor(models.Model):
 
 class Medication(models.Model):
     generic_name = models.CharField(max_length=64)
-    trade_name = models.CharField(max_length=64)
     dose = models.FloatField()
     unit = models.ForeignKey("Unit", on_delete=models.CASCADE)
     vendor = models.ForeignKey("Vendor", on_delete=models.CASCADE)
@@ -29,6 +28,13 @@ class Medication(models.Model):
     def __str__(self) -> str:
         return f"{self.generic_name}"
 
+
+class TradeName(models.Model):
+    brand = models.CharField(max_length=64)
+    generic = models.ForeignKey("Medication", on_delete=models.CASCADE, related_name='trade_names')
+
+    def __str__(self) -> str:
+        return f"{self.brand} ({self.generic})"
 
 class Unit(models.Model):
     unit = models.CharField(max_length=64)
