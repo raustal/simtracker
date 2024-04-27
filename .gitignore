@@ -396,3 +396,6 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/django,python,visualstudiocode
+
+# Visual Studio Code config files.
+.vscode/
